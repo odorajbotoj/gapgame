@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gap Game By:odorajbotoj Ver.1</title>
+
+    <style>
+        a:link{color:#478EFF;}
+        a:visited{color:#478EFF;}
+        a:hover{color:#478EFF;}
+        a:active{color:#478EFF;}
+        #game{
+        	text-align: center;
+        	position: absolute;
+        	left: 50%;
+        	transform: translate(-50%);
+           border: 1px solid #C0C0C0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <h1 style="text-align:center;">Gap Game</h1>
+    <p style="text-align:center;"><a href="task.html">信&nbsp;&nbsp;竞&nbsp;&nbsp;生&nbsp;&nbsp;的&nbsp;&nbsp;快&nbsp;&nbsp;乐</a></p>
+    <div id="game">
+        <span>
+            <button onclick="newGame(originCards)">新游戏</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="save()">保存</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="load()">载入</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="back()">上一步</button>
+        </span>
+        <div id="gird">
+            <span>
+                <button class="card" id="11">11</button>
+                <button class="card" id="12" onclick="choose('12')">00</button>
+                <button class="card" id="13" onclick="choose('13')">00</button>
+                <button class="card" id="14" onclick="choose('14')">00</button>
+                <button class="card" id="15" onclick="choose('15')">00</button>
+                <button class="card" id="16" onclick="choose('16')">00</button>
+                <button class="card" id="17" onclick="choose('17')">00</button>
+                <button class="card" id="18" onclick="choose('18')">00</button>
+            </span><br>
+            <span>
+                <button class="card" id="21">21</button>
+                <button class="card" id="22" onclick="choose('22')">00</button>
+                <button class="card" id="23" onclick="choose('23')">00</button>
+                <button class="card" id="24" onclick="choose('24')">00</button>
+                <button class="card" id="25" onclick="choose('25')">00</button>
+                <button class="card" id="26" onclick="choose('26')">00</button>
+                <button class="card" id="27" onclick="choose('27')">00</button>
+                <button class="card" id="28" onclick="choose('28')">00</button>
+            </span><br>
+            <span>
+                <button class="card" id="31">31</button>
+                <button class="card" id="32" onclick="choose('32')">00</button>
+                <button class="card" id="33" onclick="choose('33')">00</button>
+                <button class="card" id="34" onclick="choose('34')">00</button>
+                <button class="card" id="35" onclick="choose('35')">00</button>
+                <button class="card" id="36" onclick="choose('36')">00</button>
+                <button class="card" id="37" onclick="choose('37')">00</button>
+                <button class="card" id="38" onclick="choose('38')">00</button>
+            </span><br>
+            <span>
+                <button class="card" id="41">41</button>
+                <button class="card" id="42" onclick="choose('42')">00</button>
+                <button class="card" id="43" onclick="choose('43')">00</button>
+                <button class="card" id="44" onclick="choose('44')">00</button>
+                <button class="card" id="45" onclick="choose('45')">00</button>
+                <button class="card" id="46" onclick="choose('46')">00</button>
+                <button class="card" id="47" onclick="choose('47')">00</button>
+                <button class="card" id="48" onclick="choose('48')">00</button>
+            </span><br>
+            <span>
+                <span>当前步数: </span><span id="step">0</span>
+            </span>
+        </div>
+      <br/>
+      <br/>
+      <p>
+        存档字符域:
+      </p>
+      <textarea col="20" rows="5" style="resize:none" id="ta"></textarea>
+      <p>By:odorajbotoj&nbsp&nbspVer.1</p>
+    </div>
+
+</body>
+
+</html>
